@@ -1,0 +1,916 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amarajyothi Cement Trades | Cement Dealers &amp; Bulk Suppliers</title>
+<meta name="description" content="Order branded cement online for home, contractors and builders. Choose your bags, send the order on WhatsApp and get delivery to your site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1d2328;
+    --ink-soft: #4a545c;
+    --concrete: #eef0f1;
+    --slab: #dde1e4;
+    --kiln: #d98a1c;
+    --kiln-deep: #b26f10;
+    --ok: #2e6b3f;
+    --rule: #b9c0c6;
+    --max: 1080px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--concrete);
+  }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 3px solid var(--kiln);
+    outline-offset: 3px;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 {
+    font-family: "Archivo", "Arial Narrow", sans-serif;
+    font-stretch: 75%;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 16px;
+  }
+  h2 { font-size: clamp(2rem, 4.5vw, 3rem); }
+  h3 { font-size: 1.3rem; font-weight: 700; }
+  p { margin: 0 0 16px; max-width: 62ch; }
+  .muted { color: var(--ink-soft); }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--ink); color: #fff;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
+  .brand { font-family: "Archivo", sans-serif; font-stretch: 80%; font-weight: 800; font-size: 1.2rem; text-decoration: none; white-space: nowrap; }
+  .brand span { color: var(--kiln); }
+  nav a { color: #dfe4e8; text-decoration: none; margin-left: 22px; font-size: 0.95rem; }
+  nav a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+  .cart-pill {
+    background: var(--kiln); color: var(--ink) !important; font-weight: 600;
+    padding: 9px 16px; border-radius: 4px; margin-left: 22px; white-space: nowrap;
+  }
+
+  /* Hero */
+  .hero { padding: 96px 0 88px; border-bottom: 1px solid var(--rule); }
+  .hero h1 { font-size: clamp(3rem, 9vw, 6.5rem); max-width: 12ch; }
+  .hero .lede { font-size: 1.25rem; color: var(--ink-soft); max-width: 40ch; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .btn {
+    display: inline-block; padding: 14px 22px; border-radius: 4px;
+    text-decoration: none; font-weight: 600; border: 2px solid var(--ink);
+    background: transparent; color: var(--ink); font: inherit; font-weight: 600; cursor: pointer;
+  }
+  .btn-primary { background: var(--ink); color: #fff; }
+  .btn-primary:hover { background: #000; }
+  .btn-ghost:hover { background: var(--ink); color: #fff; }
+  .btn-wa { background: var(--ok); border-color: var(--ok); color: #fff; }
+  .btn-wa:hover { background: #245632; }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+
+  section { padding: 88px 0; }
+  .alt { background: var(--slab); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+
+  /* Catalog */
+  .catalog-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 32px; }
+  .updated { font-size: 0.92rem; color: var(--ink-soft); }
+  .cards { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+  .card { background: #fff; border: 1px solid var(--rule); padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+  .card .brand-name { font-size: 0.95rem; color: var(--ink-soft); font-weight: 500; }
+  .card h3 { margin: 0; }
+  .card .use { font-size: 0.95rem; color: var(--ink-soft); margin: 0; }
+  .price { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1.35rem; margin-top: auto; padding-top: 12px; }
+  .price small { font-family: "IBM Plex Sans", sans-serif; font-size: 0.85rem; font-weight: 400; color: var(--ink-soft); }
+  .stock { font-size: 0.85rem; font-weight: 600; color: var(--ok); }
+  .stock.out { color: #9a3b1e; }
+  .qty { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .qty button {
+    width: 40px; height: 40px; border: 2px solid var(--ink); background: #fff; font-size: 1.2rem; cursor: pointer; font-weight: 700;
+  }
+  .qty button:hover { background: var(--ink); color: #fff; }
+  .qty output { min-width: 28px; text-align: center; font-weight: 600; }
+  .add-btn { width: 100%; margin-top: 8px; padding: 12px; }
+  .note { font-size: 0.92rem; color: var(--ink-soft); margin-top: 20px; }
+
+  /* Order */
+  .order { display: grid; gap: 40px; grid-template-columns: 1fr; }
+  @media (min-width: 900px) { .order { grid-template-columns: 1.1fr 1fr; align-items: start; } }
+  .panel { background: #fff; border: 1px solid var(--rule); padding: 28px; }
+  .lines { list-style: none; padding: 0; margin: 0 0 16px; }
+  .lines li { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .lines li button { background: none; border: 0; color: var(--kiln-deep); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
+  .total { display: flex; justify-content: space-between; font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1.2rem; padding-top: 12px; }
+  .empty { color: var(--ink-soft); padding: 16px 0; }
+  form { display: grid; gap: 14px; margin-top: 20px; }
+  label { font-size: 0.92rem; font-weight: 600; display: grid; gap: 6px; }
+  input, textarea, select {
+    font: inherit; padding: 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--concrete); color: var(--ink); width: 100%;
+  }
+  textarea { min-height: 84px; resize: vertical; }
+  .msg { font-size: 0.92rem; color: #9a3b1e; min-height: 1.4em; margin: 0; }
+
+  /* About & services */
+  .grid { display: grid; gap: 0; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 40px; border-top: 2px solid var(--ink); }
+  .grid > div { padding: 28px 24px 28px 0; border-bottom: 1px solid var(--rule); }
+  .grid p { color: var(--ink-soft); font-size: 1rem; }
+  .split { display: grid; gap: 48px; grid-template-columns: 1fr; }
+  @media (min-width: 820px) { .split { grid-template-columns: 1fr 1fr; align-items: start; } }
+  ul.checks { list-style: none; padding: 0; margin: 0; }
+  ul.checks li { padding: 14px 0 14px 32px; border-bottom: 1px solid var(--rule); position: relative; }
+  ul.checks li::before { content: ""; position: absolute; left: 0; top: 22px; width: 14px; height: 14px; background: var(--kiln); }
+
+  /* Contact */
+  .contact-list dt { font-family: "Archivo", sans-serif; font-stretch: 85%; font-weight: 700; margin-top: 18px; }
+  .contact-list dd { margin: 4px 0 0; font-size: 1.15rem; }
+
+  footer { background: var(--ink); color: #c4ccd3; padding: 40px 0 calc(40px + env(safe-area-inset-bottom, 0px)); font-size: 0.92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+  footer strong { color: #fff; }
+
+  /* Staff-only daily rate panel (hidden from customers) */
+  .admin-grid { display: grid; gap: 12px; margin-top: 20px; }
+  .admin-row { display: grid; gap: 10px; grid-template-columns: 1.4fr 1fr 1fr; align-items: center; background: #fff; padding: 14px; border: 1px solid var(--rule); }
+  .admin-row strong { font-size: 1rem; }
+  .admin-row .sub { font-size: .85rem; color: var(--ink-soft); }
+  .admin-row input, .admin-row select { padding: 14px; font-size: 1.1rem; }
+  .admin-head { font-size: .85rem; font-weight: 600; color: var(--ink-soft); display: grid; gap: 10px; grid-template-columns: 1.4fr 1fr 1fr; padding: 0 14px; }
+  #admin.open { display: block; position: fixed; inset: 0; z-index: 100; overflow-y: auto; background: var(--concrete); padding: 32px 0; }
+  .admin-close { float: right; background: none; border: 2px solid var(--ink); padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer; }
+  .owner-link { background: none; border: 0; color: #c4ccd3; text-decoration: underline; font: inherit; cursor: pointer; padding: 0; }
+  .admin-top { display: grid; gap: 12px; margin-top: 20px; }
+  .admin-top label { max-width: 320px; }
+  @media (max-width: 560px) { .admin-row, .admin-head { grid-template-columns: 1fr; } .admin-head { display: none; } }
+  @media (max-width: 720px) {
+    nav a:not(.cart-pill) { display: none; }
+    .hero { padding: 64px 0; }
+    section { padding: 64px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  :root {
+    --ink: #1c2924;
+    --ink-soft: #59665f;
+    --concrete: #f3f3ee;
+    --slab: #e4e7df;
+    --kiln: #e66a3b;
+    --kiln-deep: #b84b27;
+    --ok: #28634b;
+    --rule: #c7cec6;
+    --max: 1160px;
+  }
+  body { font-size: 1rem; }
+  .wrap { max-width: var(--max); padding-left: 28px; padding-right: 28px; }
+  h1, h2, h3 { letter-spacing: 0; }
+  h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
+  .eyebrow { color: var(--kiln-deep); font-size: .76rem; font-weight: 700; text-transform: uppercase; margin: 0 0 18px; }
+  header { background: var(--concrete); color: var(--ink); border-bottom: 1px solid var(--rule); }
+  .bar { min-height: 72px; height: auto; }
+  .brand { font-size: 1.12rem; }
+  .brand span { color: var(--kiln-deep); }
+  nav a { color: var(--ink); font-weight: 600; }
+  nav a:hover { color: var(--kiln-deep); }
+  .cart-pill { background: var(--ink); color: #fff !important; border-radius: 2px; }
+  .hero { padding: 34px 0 48px; background: var(--ink); color: #fff; border: 0; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
+  .hero-copy { padding: 44px 0; }
+  .hero .eyebrow { color: #f3a17f; }
+  .hero h1 { font-size: clamp(3rem, 6vw, 5.6rem); max-width: 9ch; margin-bottom: 24px; }
+  .hero .lede { color: #d5ddd7; font-size: 1.12rem; }
+  .hero-image { margin: 0; min-height: 470px; position: relative; overflow: hidden; background: #344d40; }
+  .hero-image img { display: block; width: 100%; height: 100%; min-height: 470px; object-fit: cover; }
+  .hero-image figcaption { position: absolute; bottom: 18px; left: 18px; padding: 8px 12px; background: var(--concrete); color: var(--ink); font-size: .82rem; font-weight: 600; }
+  .hero .btn-primary { background: var(--kiln); border-color: var(--kiln); color: var(--ink); }
+  .hero .btn-ghost { border-color: #cbd5ce; color: #fff; }
+  .hero .btn-ghost:hover { background: #fff; color: var(--ink); }
+  .btn { border-radius: 2px; }
+  section { padding: 84px 0; }
+  .alt { background: var(--slab); border: 0; }
+  .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+  .section-head h2 { margin-bottom: 0; }
+  .card { border-top: 3px solid var(--kiln); }
+  input, textarea, select { border-radius: 2px; }
+  .gallery { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 14px; }
+  .gallery figure { margin: 0; position: relative; overflow: hidden; min-height: 300px; background: var(--slab); }
+  .gallery figure:first-child { min-height: 420px; }
+  .gallery img { display: block; width: 100%; height: 100%; min-height: inherit; object-fit: cover; transition: transform .45s ease; }
+  .gallery figure:hover img { transform: scale(1.035); }
+  .gallery figcaption { position: absolute; inset: auto 0 0; padding: 38px 18px 16px; color: #fff; font-weight: 600; background: linear-gradient(transparent, rgba(18, 32, 25, .82)); }
+  .review-band { background: #dce6dd; }
+  .review-layout { display: grid; grid-template-columns: 1fr minmax(280px, 460px); align-items: start; gap: 40px; }
+  .review-layout h2 { max-width: 13ch; }
+  .review-form { width: min(100%, 460px); display: grid; gap: 16px; }
+  .rating-pick { border: 0; padding: 0; margin: 0; }
+  .rating-pick legend, .review-form label { font-weight: 600; font-size: .92rem; margin-bottom: 8px; }
+  .rating-stars { display: flex; gap: 5px; }
+  .rating-stars label { margin: 0; cursor: pointer; }
+  .rating-stars input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  .rating-stars > label > span:first-of-type { color: #87948b; font-size: 2.15rem; line-height: 1; }
+  .rating-stars input:checked + span, .rating-stars .selected > span:first-of-type { color: #e66a3b; }
+  .rating-stars input:focus-visible + span { outline: 3px solid var(--kiln); outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .review-form textarea { min-height: 96px; background: #fff; }
+  .review-form .btn { justify-self: start; }
+  .review-status { color: var(--ink-soft); font-size: .9rem; margin: 0; }
+  .review-results { grid-column: 1 / -1; min-width: 0; }
+  .review-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .review-list.expanded { max-height: 420px; overflow-y: auto; overscroll-behavior: contain; align-content: start; padding: 2px; }
+  .review-more[hidden] { display: none; }
+  .review-card { background: #fff; border: 1px solid var(--rule); padding: 20px; }
+  .review-card-stars { color: var(--kiln-deep); font-size: 1.2rem; }
+  .review-card-text { margin: 12px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .review-card-meta { color: var(--ink-soft); font-size: .88rem; margin: 0; }
+  footer a { color: #fff; }
+  @media (max-width: 820px) {
+    .hero-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .hero-image, .hero-image img { min-height: 400px; }
+    .gallery { grid-template-columns: 1fr 1fr; }
+    .gallery figure:first-child { grid-column: 1 / -1; min-height: 340px; }
+    .gallery figure { min-height: 250px; }
+  }
+  @media (max-width: 720px) {
+    .wrap { padding-left: 20px; padding-right: 20px; }
+    .hero { padding: 20px 0 28px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 10px; }
+    .hero-copy { padding: 28px 0 10px; }
+    .hero h1 { font-size: clamp(2.8rem, 12vw, 4.3rem); }
+    .hero-image, .hero-image img { min-height: 320px; max-height: 440px; }
+    section { padding: 64px 0; }
+    .section-head { align-items: flex-start; flex-direction: column; }
+    .review-layout { grid-template-columns: 1fr; gap: 24px; }
+    .review-results { grid-column: 1; }
+    .gallery { gap: 10px; }
+    .gallery figure:first-child { min-height: 280px; }
+    .gallery figure { min-height: 190px; }
+    .gallery figcaption { font-size: .88rem; padding: 30px 12px 12px; }
+    .panel { padding: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .gallery img { transition: none; }
+  }
+  body { background: #f7f7f2; }
+  header { box-shadow: 0 1px 0 rgba(28, 41, 36, .08); }
+  .bar { gap: 24px; }
+  nav { display: flex; align-items: center; }
+  nav a { transition: color .18s ease, background-color .18s ease, transform .18s ease; }
+  .cart-pill:hover { background: var(--kiln); color: var(--ink) !important; text-decoration: none; transform: translateY(-1px); }
+  .hero { position: relative; overflow: hidden; background: #172720; }
+  .hero::before { content: ""; position: absolute; inset: 0 0 0 58%; background: linear-gradient(90deg, #172720 0%, rgba(23, 39, 32, .18) 30%, transparent 72%); z-index: 1; pointer-events: none; }
+  .hero-grid { position: relative; z-index: 2; }
+  .hero-copy { animation: rise-in .7s ease-out both; }
+  .hero-image { box-shadow: 18px 18px 0 rgba(230, 106, 59, .9); }
+  .hero-image img { filter: saturate(.85) contrast(1.04); }
+  .hero-image figcaption { font-weight: 700; }
+  .btn { transition: transform .18s ease, background-color .18s ease, color .18s ease; }
+  .btn:hover:not(:disabled) { transform: translateY(-2px); }
+  section:not(.alt):not(.review-band) { background: #f7f7f2; }
+  .catalog-head { border-bottom: 1px solid var(--rule); padding-bottom: 20px; }
+  .updated { display: inline-block; padding: 5px 10px; background: #e5ece5; color: #24533e; font-weight: 600; }
+  .card { border: 1px solid #d4dbd2; border-top: 3px solid var(--kiln); box-shadow: 0 3px 12px rgba(28, 41, 36, .045); transition: transform .2s ease, box-shadow .2s ease; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(28, 41, 36, .11); }
+  .card .brand-name { color: var(--kiln-deep); font-size: .78rem; font-weight: 700; }
+  .stock { display: inline-block; padding: 3px 8px; background: #e6f0e9; border-radius: 2px; }
+  .stock.out { background: #f7e8e2; }
+  .panel { border-color: #d4dbd2; box-shadow: 0 8px 24px rgba(28, 41, 36, .055); }
+  .grid { counter-reset: service; gap: 0 32px; }
+  .grid > div { position: relative; padding: 24px 8px 24px 48px; }
+  .grid > div::before { counter-increment: service; content: "0" counter(service); position: absolute; left: 0; top: 25px; color: var(--kiln-deep); font: 700 .9rem "Archivo", sans-serif; }
+  .gallery figure { box-shadow: 0 8px 22px rgba(28, 41, 36, .12); }
+  .review-band { background: #e5ece5; }
+  .review-card { border-color: #d4dbd2; border-left: 3px solid var(--kiln); box-shadow: 0 4px 14px rgba(28, 41, 36, .055); }
+  footer { background: #172720; }
+  @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 820px) {
+    .hero::before { inset: auto 0 0; height: 55%; background: linear-gradient(180deg, #172720 0%, rgba(23, 39, 32, .08) 55%, transparent 100%); }
+    .hero-image { box-shadow: 10px 10px 0 rgba(230, 106, 59, .9); }
+  }
+  @media (max-width: 720px) {
+    .bar { min-height: 64px; }
+    .bar { gap: 8px; }
+    .cart-pill { margin-left: 0; padding: 8px 10px; font-size: .82rem; }
+    .hero-image, .hero-image img { min-height: 290px; }
+    .grid > div { padding-left: 40px; }
+    .review-form .btn { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">Amarajyothi <span>Cement Trades</span></a>
+    <nav aria-label="Main">
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="cart-pill" href="#order">Your order (<span id="cart-count">0</span>)</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Amarajyothi / Cement supply</p>
+        <h1>Materials for the work ahead.</h1>
+        <p class="lede">Cement by the bag or by the truckload, with clear rates and delivery to your site.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#products">Explore cement</a>
+          <a class="btn btn-ghost" href="tel:+919900679288">Call +91 99006 79288</a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Construction work underway at a building site" fetchpriority="high">
+        <figcaption>From materials to milestones</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section id="products">
+    <div class="wrap">
+      <div class="catalog-head">
+        <div>
+          <p class="eyebrow">Choose what you need</p>
+          <h2>Products and today's rates</h2>
+          <p class="updated" id="updated"></p>
+        </div>
+      </div>
+      <div class="cards" id="catalog"></div>
+      <p class="note">Rates change with the market. Where a rate says "Call for rate", we confirm the price before you pay.</p>
+    </div>
+  </section>
+
+  <section id="order" class="alt">
+    <div class="wrap order">
+      <div>
+        <h2>Your order</h2>
+        <p class="muted">Add bags from the products above, then fill in your details and send the order on WhatsApp. We reply with the final rate and delivery time.</p>
+        <div class="panel">
+          <ul class="lines" id="lines"></ul>
+          <div class="total"><span>Estimated total</span><span id="total">₹0</span></div>
+          <p class="muted" style="font-size:.9rem;margin-top:8px" id="total-note"></p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Delivery details</h3>
+        <form id="order-form" novalidate="">
+          <label>Your name
+            <input type="text" id="f-name" autocomplete="name" required="">
+          </label>
+          <label>Phone number
+            <input type="tel" id="f-phone" autocomplete="tel" required="">
+          </label>
+          <label>Delivery address or site location
+            <textarea id="f-address" required=""></textarea>
+          </label>
+          <label>Delivery date and notes (optional)
+            <textarea id="f-notes"></textarea>
+          </label>
+          <p class="msg" id="form-msg" role="alert"></p>
+          <button class="btn btn-wa" type="submit" id="send-btn" disabled="">Send order on WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Supply that keeps work moving</p>
+      <h2>What we offer</h2>
+      <div class="grid">
+        <div><h3>Retail bags</h3><p>Single bags for home repairs, small extensions and weekend projects.</p></div>
+        <div><h3>Bulk supply</h3><p>Full truckloads for builders and contractors, with volume pricing for regular orders.</p></div>
+        <div><h3>Site delivery</h3><p>Delivery to your site on the date you need it, with bags counted at unloading.</p></div>
+        <div><h3>Stock advice</h3><p>Help choosing the right grade for slabs, plaster, foundations or masonry.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">At the site</p>
+          <h2>Building, from the ground up.</h2>
+        </div>
+        <p class="muted">Groundwork, structure and the details that make a build last.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Active construction site with building work in progress" loading="lazy">
+          <figcaption>Work taking shape</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Modern building viewed from below" loading="lazy">
+          <figcaption>Made for the long run</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Architectural plans for a building project" loading="lazy">
+          <figcaption>Plan the next pour</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="review-band">
+    <div class="wrap review-layout">
+      <div>
+        <p class="eyebrow">Customer reviews</p>
+        <h2>Your experience matters.</h2>
+        <p>Ordered from Amarajyothi? Share how we did and help other builders choose with confidence.</p>
+      </div>
+      <form class="review-form" id="review-form">
+        <fieldset class="rating-pick">
+          <legend>Rate your experience</legend>
+          <div class="rating-stars">
+            <label><input type="radio" name="review-rating" value="1" required><span aria-hidden="true">★</span><span class="sr-only">1 star</span></label>
+            <label><input type="radio" name="review-rating" value="2"><span aria-hidden="true">★</span><span class="sr-only">2 stars</span></label>
+            <label><input type="radio" name="review-rating" value="3"><span aria-hidden="true">★</span><span class="sr-only">3 stars</span></label>
+            <label><input type="radio" name="review-rating" value="4"><span aria-hidden="true">★</span><span class="sr-only">4 stars</span></label>
+            <label><input type="radio" name="review-rating" value="5"><span aria-hidden="true">★</span><span class="sr-only">5 stars</span></label>
+          </div>
+        </fieldset>
+        <label for="review-name">Name (optional)
+          <input type="text" id="review-name" maxlength="60" autocomplete="name" placeholder="Anonymous">
+        </label>
+        <label for="review-text">Your review
+          <textarea id="review-text" maxlength="600" required placeholder="Tell us about your order or delivery"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit" id="review-submit">Publish review</button>
+        <p class="review-status" id="review-status" role="status">Reviews are saved in this browser only.</p>
+      </form>
+      <div class="review-results">
+        <div class="review-list" id="review-list" aria-live="polite"><p class="muted">No customer reviews yet.</p></div>
+        <button class="btn btn-ghost review-more" id="review-more" type="button" aria-expanded="false" hidden>Show more reviews</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="alt">
+    <div class="wrap split">
+      <div>
+        <h2>Why builders buy from us</h2>
+        <p>We have supplied cement in this area for years. Our customers come back because the stock is consistent, the bags are fresh and deliveries arrive when we promise.</p>
+        <p>Whether you are building one house or supplying a dozen sites, the process is simple: one order, one clear rate, one reliable delivery.</p>
+      </div>
+      <ul class="checks">
+        <li>Fresh stock, stored dry and rotated regularly</li>
+        <li>Genuine branded cement, with the grade printed on every bag</li>
+        <li>Clear rates confirmed before you pay</li>
+        <li>Bulk orders with delivery to site</li>
+        <li>Friendly advice on the right product for your work</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap split">
+      <div>
+        <h2>Visit or call us</h2>
+        <p>Questions about grades or bulk quantities? Call or message us and we will help.</p>
+      </div>
+      <dl class="contact-list">
+        <dt>Phone</dt>
+        <dd><a href="tel:+919900679288">+91 99006 79288</a><br><a href="tel:+919845091844">+91 98450 91844</a></dd>
+        <dt>WhatsApp</dt>
+        <dd><a href="https://wa.me/919900679288" target="_blank" rel="noopener">+91 99006 79288</a><br><a href="https://wa.me/919845091844" target="_blank" rel="noopener">+91 98450 91844</a></dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:info@example.com">Prabhushiragondshiragond@gmail.com</a></dd>
+        <dt>Address</dt>
+        <dd>CMC complex, Gandhinagar, Vijayapura, Karnataka, 586104</dd>
+        <dt>Opening hours</dt>
+        <dd>Monday to Saturday, 8:00 AM to 7:00 PM<br>Sunday, 8:00 AM to 1:00 PM</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<section id="admin" class="alt" hidden="">
+  <div class="wrap">
+    <button class="admin-close" type="button" id="a-close">Close</button>
+    <h2>Update today's rates</h2>
+    <p class="muted">Owner only. Type today's rate for each bag, set stock, then tap Update website. Customers will see the new rates straight away. Leave a rate empty to show "Call for rate".</p>
+    <div id="a-login">
+      <label style="max-width:320px">Owner password
+        <input type="password" id="a-pass" autocomplete="current-password">
+      </label>
+      <div class="actions"><button class="btn btn-primary" type="button" id="a-unlock">Unlock</button></div>
+      <p class="msg" id="a-login-msg" role="status"></p>
+    </div>
+    <div id="a-tools" hidden>
+    <div class="admin-top">
+      <label>Rates date (for example, 9 October 2026)
+        <input type="text" id="a-date">
+      </label>
+    </div>
+    <div class="admin-head"><span>Product</span><span>Rate per bag (₹)</span><span>In stock?</span></div>
+    <div class="admin-grid" id="admin-rows"></div>
+    <div class="actions">
+      <button class="btn btn-primary" type="button" id="a-save">Update website</button>
+    </div>
+    <p class="msg" id="a-msg" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Amarajyothi Cement Trades</strong><br>Cement dealers and bulk suppliers</div>
+    <div>Phone: <a href="tel:+919900679288">+91 99006 79288</a>, <a href="tel:+919845091844">+91 98450 91844</a> · <a href="mailto:info@example.com">Prabhushiragondshiragond@gmail.com</a><br><button class="owner-link" type="button" id="owner-link">Owner: update today's rates</button></div>
+    <div>© 2026 Amarajyothi Cement Trades. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================
+   PRODUCT CATALOG: the only place to change products and rates.
+   - price: a number in rupees per bag, or null to show "Call for rate"
+   - inStock: true or false
+   - To add a product, copy one line and change the values.
+   ========================================================== */
+const SHOP = {
+  "whatsapp": "919900679288",
+  "updated": "8 October 2026",
+  "currency": "₹"
+};
+
+const PRODUCTS = [
+  {
+    "id": "opc53",
+    "brand": "[Brand 1]",
+    "grade": "OPC 53 Grade",
+    "pack": "50 kg bag",
+    "use": "Slabs, columns and RCC work",
+    "price": null,
+    "inStock": true
+  },
+  {
+    "id": "ppc",
+    "brand": "[Brand 2]",
+    "grade": "PPC",
+    "pack": "50 kg bag",
+    "use": "Plastering, masonry and general construction",
+    "price": null,
+    "inStock": true
+  },
+  {
+    "id": "opc43",
+    "brand": "[Brand 3]",
+    "grade": "OPC 43 Grade",
+    "pack": "50 kg bag",
+    "use": "Residential building and repairs",
+    "price": null,
+    "inStock": true
+  },
+  {
+    "id": "psc",
+    "brand": "[Brand 4]",
+    "grade": "PSC",
+    "pack": "50 kg bag",
+    "use": "Foundations and water-exposed work",
+    "price": null,
+    "inStock": false
+  }
+];
+
+const RATE_STORAGE_KEY = "amarajyothi-product-rates";
+
+function loadSavedRates() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(RATE_STORAGE_KEY) || "null");
+    if (!saved || !Array.isArray(saved.products)) return;
+    if (typeof saved.updated === "string" && saved.updated.trim()) SHOP.updated = saved.updated;
+    const savedById = new Map(saved.products.map(product => [product.id, product]));
+    PRODUCTS.forEach(product => {
+      const savedProduct = savedById.get(product.id);
+      if (!savedProduct) return;
+      const validPrice = savedProduct.price === null
+        || (Number.isFinite(savedProduct.price) && savedProduct.price >= 0);
+      if (validPrice && typeof savedProduct.inStock === "boolean") {
+        product.price = savedProduct.price;
+        product.inStock = savedProduct.inStock;
+      }
+    });
+  } catch (error) {
+    // Ignore unavailable or invalid browser storage and use the default catalog.
+  }
+}
+
+loadSavedRates();
+
+/* ==========================================================
+   Below this line is the shop engine. You do not need to edit it.
+   ========================================================== */
+const cart = {}; // id -> bags
+
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => SHOP.currency + n.toLocaleString("en-IN");
+
+function renderCatalog() {
+  $("updated").textContent = "Rates updated: " + SHOP.updated;
+  $("catalog").innerHTML = PRODUCTS.map(p => {
+    const qty = cart[p.id] || 0;
+    const price = p.price === null
+      ? `Call for rate`
+      : `${fmt(p.price)} <small>per bag</small>`;
+    const stock = p.inStock
+      ? `<span class="stock">In stock</span>`
+      : `<span class="stock out">Out of stock, call us</span>`;
+    return `
+      <article class="card">
+        <div class="brand-name">${p.brand}</div>
+        <h3>${p.grade}</h3>
+        <p class="use">${p.use}</p>
+        <div>${stock} &middot; <span class="muted">${p.pack}</span></div>
+        <div class="price">${price}</div>
+        <div class="qty" aria-label="Quantity for ${p.grade}">
+          <button type="button" data-act="dec" data-id="${p.id}" aria-label="Remove one bag" ${!p.inStock ? "disabled" : ""}>&minus;</button>
+          <output id="q-${p.id}">${qty}</output>
+          <button type="button" data-act="inc" data-id="${p.id}" aria-label="Add one bag" ${!p.inStock ? "disabled" : ""}>+</button>
+        </div>
+        <button class="btn btn-primary add-btn" type="button" data-act="inc" data-id="${p.id}" ${!p.inStock ? "disabled" : ""}>Add to order</button>
+      </article>`;
+  }).join("");
+}
+
+function renderCart() {
+  let count = 0, total = 0, unknown = false, lines = [];
+  PRODUCTS.forEach(p => {
+    const q = cart[p.id] || 0;
+    if (!q) return;
+    count += q;
+    if (p.price === null) unknown = true; else total += p.price * q;
+    lines.push(`<li><span>${q} &times; ${p.grade} (${p.brand}, ${p.pack})</span>
+      <button type="button" data-act="remove" data-id="${p.id}">Remove</button></li>`);
+  });
+  $("cart-count").textContent = count;
+  $("lines").innerHTML = lines.length ? lines.join("") : `<li class="empty">Your order is empty. Add bags from the products above.</li>`;
+  $("total").textContent = unknown && total === 0 ? "To be confirmed" : fmt(total) + (unknown ? "+" : "");
+  $("total-note").textContent = unknown
+    ? "Some items are 'Call for rate'. We confirm the final amount with you before delivery."
+    : "";
+  $("send-btn").disabled = count === 0;
+  // update quantity displays on cards
+  PRODUCTS.forEach(p => { const o = $("q-" + p.id); if (o) o.textContent = cart[p.id] || 0; });
+}
+
+function change(id, delta) {
+  const p = PRODUCTS.find(x => x.id === id);
+  if (!p || !p.inStock) return;
+  cart[id] = Math.max(0, Math.min(999, (cart[id] || 0) + delta));
+  if (!cart[id]) delete cart[id];
+  renderCart();
+}
+
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-act]");
+  if (!b) return;
+  const act = b.dataset.act, id = b.dataset.id;
+  if (act === "inc") {
+    change(id, 1);
+    if (b.classList.contains("add-btn")) {
+      const order = $("order");
+      const top = window.scrollY + order.getBoundingClientRect().top - 72;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  }
+  if (act === "dec") change(id, -1);
+  if (act === "remove") { delete cart[id]; renderCart(); }
+});
+
+function validPhone(v) { return /^[+]?[0-9\s-]{10,15}$/.test(v.trim()); }
+
+$("order-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = $("f-name").value.trim();
+  const phone = $("f-phone").value.trim();
+  const address = $("f-address").value.trim();
+  const notes = $("f-notes").value.trim();
+  const msg = $("form-msg");
+
+  if (!Object.keys(cart).length) { msg.textContent = "Add at least one bag to your order."; return; }
+  if (!name) { msg.textContent = "Please enter your name."; return; }
+  if (!validPhone(phone)) { msg.textContent = "Please enter a valid phone number."; return; }
+  if (!address) { msg.textContent = "Please enter the delivery address."; return; }
+  msg.textContent = "";
+
+  let total = 0, unknown = false;
+  const items = PRODUCTS.filter(p => cart[p.id]).map(p => {
+    if (p.price === null) unknown = true; else total += p.price * cart[p.id];
+    const rate = p.price === null ? "rate to confirm" : fmt(p.price) + "/bag";
+    return `- ${cart[p.id]} x ${p.grade} (${p.brand}, ${p.pack}) @ ${rate}`;
+  });
+
+  const text = [
+    "Hello, I would like to place this cement order:",
+    "",
+    ...items,
+    "",
+    `Estimated total: ${fmt(total)}${unknown ? " + items to confirm" : ""}`,
+    "",
+    `Name: ${name}`,
+    `Phone: ${phone}`,
+    `Delivery address: ${address}`,
+    notes ? `Delivery date / notes: ${notes}` : null
+  ].filter(x => x !== null).join("\n");
+
+  window.open(`https://wa.me/${SHOP.whatsapp}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+});
+
+/* ---------- Staff rate panel ---------- */
+
+function renderAdmin() {
+  $("a-date").value = SHOP.updated;
+  $("admin-rows").innerHTML = PRODUCTS.map(p => `
+    <div class="admin-row">
+      <div><strong>${p.grade}</strong><div class="sub">${p.brand}, ${p.pack}</div></div>
+      <input type="number" min="0" step="1" inputmode="numeric" id="a-price-${p.id}"
+             value="${p.price === null ? "" : p.price}" placeholder="Call">
+      <select id="a-stock-${p.id}" aria-label="In stock for ${p.grade}">
+        <option value="yes" ${p.inStock ? "selected" : ""}>Yes</option>
+        <option value="no" ${!p.inStock ? "selected" : ""}>No</option>
+      </select>
+    </div>`).join("");
+}
+
+function saveRates() {
+  const msg = $("a-msg");
+  msg.style.color = "";
+  PRODUCTS.forEach(p => {
+    const v = $("a-price-" + p.id).value.trim();
+    p.price = v === "" ? null : Math.max(0, Math.round(Number(v)));
+    p.inStock = $("a-stock-" + p.id).value === "yes";
+  });
+  SHOP.updated = $("a-date").value.trim() || SHOP.updated;
+  try {
+    localStorage.setItem(RATE_STORAGE_KEY, JSON.stringify({
+      updated: SHOP.updated,
+      products: PRODUCTS.map(({ id, price, inStock }) => ({ id, price, inStock }))
+    }));
+    renderCatalog();
+    renderCart();
+    msg.textContent = "Rates saved in this browser.";
+  } catch (error) {
+    msg.style.color = "#9a3b1e";
+    msg.textContent = "Could not save rates in browser storage.";
+  }
+}
+
+function initStaffPanel() {
+  $("a-save").addEventListener("click", saveRates);
+  $("a-unlock").addEventListener("click", unlockPanel);
+  $("a-pass").addEventListener("keydown", e => { if (e.key === "Enter") unlockPanel(); });
+  $("a-close").addEventListener("click", () => {
+    $("admin").classList.remove("open");
+    $("admin").hidden = true;
+    $("a-tools").hidden = true;
+    $("a-login").hidden = false;
+    $("a-pass").value = "";
+    $("a-login-msg").textContent = "";
+  });
+  $("owner-link").addEventListener("click", () => {
+    $("admin").hidden = false;
+    $("admin").classList.add("open");
+    window.scrollTo(0, 0);
+  });
+}
+
+async function unlockPanel() {
+  const ok = await checkPassword($("a-pass").value);
+  if (!ok) { $("a-login-msg").textContent = "Incorrect password. Please try again."; return; }
+  $("a-login-msg").textContent = "";
+  $("a-login").hidden = true;
+  $("a-tools").hidden = false;
+  renderAdmin();
+}
+
+/* Owner password, stored only as a SHA-256 hash.
+   To change it: hash the new password and replace the value below. */
+const OWNER_PASSWORD_HASH = "76269c3c1807e1bc5b4ae9f0a0f14fe27b7d99b1ab3cfa652479d8b2b81ec617";
+
+async function checkPassword(text) {
+  try {
+    const bytes = new TextEncoder().encode(text);
+    const digest = await crypto.subtle.digest("SHA-256", bytes);
+    const hex = [...new Uint8Array(digest)].map(b => b.toString(16).padStart(2, "0")).join("");
+    return hex === OWNER_PASSWORD_HASH;
+  } catch (e) {
+    return false;
+  }
+}
+
+const reviewForm = $("review-form");
+reviewForm.querySelectorAll('input[name="review-rating"]').forEach(radio => {
+  radio.addEventListener("change", () => {
+    reviewForm.querySelectorAll(".rating-stars label").forEach(label => {
+      label.classList.toggle("selected", Number(label.querySelector("input").value) <= Number(radio.value));
+    });
+  });
+});
+initStaffPanel();
+
+renderCatalog();
+renderCart();
+</script>
+<script>
+const reviewList = document.getElementById("review-list");
+const reviewStatus = document.getElementById("review-status");
+const reviewMore = document.getElementById("review-more");
+const REVIEW_STORAGE_KEY = "amarajyothi-customer-reviews";
+let showAllReviews = false;
+
+function getReviews() {
+  try {
+    const reviews = JSON.parse(localStorage.getItem(REVIEW_STORAGE_KEY) || "[]");
+    return Array.isArray(reviews) ? reviews : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function renderReviews() {
+  const reviews = getReviews().sort((left, right) => right.createdAt - left.createdAt);
+  const visibleReviews = showAllReviews ? reviews : reviews.slice(0, 3);
+  if (!reviews.length) {
+    const empty = document.createElement("p");
+    empty.className = "muted";
+    empty.textContent = "No customer reviews yet.";
+    reviewList.replaceChildren(empty);
+  } else {
+    const cards = visibleReviews.map(review => {
+      const card = document.createElement("article");
+      card.className = "review-card";
+      const stars = document.createElement("div");
+      stars.className = "review-card-stars";
+      stars.setAttribute("aria-label", `${review.rating} out of 5 stars`);
+      stars.textContent = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
+      const text = document.createElement("p");
+      text.className = "review-card-text";
+      text.textContent = review.review;
+      const author = document.createElement("p");
+      author.className = "review-card-meta";
+      author.textContent = review.name || "Anonymous";
+      card.append(stars, text, author);
+      return card;
+    });
+    reviewList.replaceChildren(...cards);
+  }
+
+  reviewList.classList.toggle("expanded", showAllReviews && reviews.length > 3);
+  reviewMore.hidden = reviews.length <= 3;
+  reviewMore.textContent = showAllReviews ? "Show fewer reviews" : "Show more reviews";
+  reviewMore.setAttribute("aria-expanded", String(showAllReviews));
+}
+
+reviewForm.addEventListener("submit", event => {
+  event.preventDefault();
+  const rating = reviewForm.querySelector('input[name="review-rating"]:checked');
+  const review = document.getElementById("review-text").value.trim();
+  if (!rating || !review) return;
+
+  const reviews = getReviews();
+  reviews.push({
+    name: document.getElementById("review-name").value.trim() || "Anonymous",
+    rating: Number(rating.value),
+    review,
+    createdAt: Date.now()
+  });
+  try {
+    localStorage.setItem(REVIEW_STORAGE_KEY, JSON.stringify(reviews));
+    reviewForm.reset();
+    reviewForm.querySelectorAll(".rating-stars label").forEach(label => label.classList.remove("selected"));
+    showAllReviews = false;
+    renderReviews();
+    reviewStatus.textContent = "Review published in this browser.";
+  } catch (error) {
+    reviewStatus.textContent = "Could not save this review in browser storage.";
+  }
+});
+
+reviewMore.addEventListener("click", () => {
+  showAllReviews = !showAllReviews;
+  renderReviews();
+});
+
+renderReviews();
+</script>
+</body></html>
